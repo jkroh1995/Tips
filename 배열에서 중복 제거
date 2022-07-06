@@ -1,0 +1,6 @@
+ //X에서 중복 제거
+ 
+        HashSet<String> hashset = new HashSet<>(Arrays.asList(X));
+        String [] Y = hashset.toArray(new String[0]);
+ 
+ //Y에는 중복 제거된 것만 남음

@@ -1,0 +1,5 @@
+//Character Arraylist X에서 answer에 한 글자씩 추가. 그냥 배열이면 char idx로 바꾸면 된다
+
+for (Character idx : X) {
+            answer+= idx;
+        }

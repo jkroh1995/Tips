@@ -1,0 +1,20 @@
+int [] temp_2 = new int[strings.length];
+
+        for(int i=0;i< strings.length;i++){
+            temp_2[i]=temp[i];
+        }
+
+        Arrays.sort(temp_2);
+
+        for(int i=0;i< strings.length;i++){
+            for(int j=0;j< strings.length;j++){
+                if(temp_2[i]==temp[j]){
+                    temp[j]=-1;
+                    answer[i]=strings[j];
+                    break;
+                }
+            }
+        }
+        
+        
+        예를 들어 temp = {3,1,2,4,5}순서대로 돼있으면 그거를 순서대로 출력하는 거셈~(실패율 문제 참고)

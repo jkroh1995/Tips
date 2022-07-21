@@ -1,0 +1,7 @@
+
+import java.util.regex.Pattern;
+
+//정규식
+        String pattern = "^[0-9]*$";
+        //String이 숫자면 true가 나온다.
+        Pattern.matches(pattern, 문자열)

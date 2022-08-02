@@ -1,0 +1,26 @@
+##List -> Array
+
+//List 생성
+ArrayList<String> arrayList = new ArrayList<>();
+
+//List에 원소 추가
+arrayList.add("Test1");
+arrayList.add("Test2");
+arrayList.add("Test3");
+
+//배열 생성
+String[] array = arrayList.toArray(new String[arrayList.size()]);
+
+
+##Array -> List
+
+//배열 생성
+String[] array = new String[3];
+
+//배열에 원소 추가
+array[0] = "Test1";
+array[1] = "Test2";
+array[2] = "Test3";
+
+//List 생성
+ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(array));

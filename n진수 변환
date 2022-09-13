@@ -1,0 +1,23 @@
+ **바꾸고 싶은 수 = num, 진수 = n (LV.2 [3차]n진수 게임)
+ 
+ public String radix(int num, int n) {
+        StringBuilder sb = new StringBuilder();
+
+        if (num == 0) return "0";
+
+        while (num > 0) {
+            // 나머지가 1자릿수면 그대로 추가
+            if (num % n < 10) {
+                sb.append(num % n);
+
+                // 10, 11, 12 .. 의 경우 알파벳을 추가해야함. 10=A, 11=B ...
+            } else {
+                sb.append((char)(num%n-10 + 'A'));
+            }
+            // 추가가 끝났다면 n으로 나눈 몫을 다시 계산
+            num /= n;
+        }
+
+        // 계산한 나머지값의 역순으로 만들어야한다.
+        return sb.reverse().toString();
+    }

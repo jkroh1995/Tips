@@ -1,0 +1,3 @@
+##Integer.parseInt(str, idx);
+문자열을 idx진수로 바꿔준다. 예를 들어 String a = "100"일 때 int b = Integer.parseInt(a, 2);를 하면 b=4가된다.
+이 때 idx에 값을 넣지 않으면 기본적으로 10진수가 된다.

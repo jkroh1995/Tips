@@ -3,3 +3,7 @@
 
 ##str.repeat(n);
 -문자열을 n번 반복한다.
+
+##Arrays.toString(arr);
+String[] strArray = {"Hello", " ", "Java", " ", "Programming"};
+String strArrayToString  = Arrays.toString(strArray);

@@ -7,3 +7,9 @@
 ##Arrays.toString(arr);
 String[] strArray = {"Hello", " ", "Java", " ", "Programming"};
 String strArrayToString  = Arrays.toString(strArray);
+-배열을 문자열로 바꿔준다 => Hello Java Programming
+
+###String.join(delimiter, List);
+List<String>list = List.of("Hello", "Java", "Programming");
+String strListtoString = String.join(" ", list);
+-리스트를 문자열로 바꿔준다 => Hello Java Programming

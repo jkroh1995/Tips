@@ -1,0 +1,3 @@
+List<String[]> result;
+
+result.sort((o1, o2) -> Arrays.toString(o1).compareTo(Arrays.toString(o2)));
